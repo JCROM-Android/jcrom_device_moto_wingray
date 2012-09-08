@@ -91,3 +91,6 @@ BOARD_KERNEL_CMDLINE := androidboot.carrier=wifi-only product_type=w
 # Use the open-source board-info file if none was set by the vendor
 # config.
 TARGET_BOARD_INFO_FILE ?= device/moto/wingray/board-info.txt
+
+DISABLE_DEXPREOPT := true
+

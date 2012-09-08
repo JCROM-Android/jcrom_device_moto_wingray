@@ -112,6 +112,16 @@ PRODUCT_COPY_FILES += \
     system/extras/bugmailer/bugmailer.sh:system/bin/bugmailer.sh \
     system/extras/bugmailer/send_bug:system/bin/send_bug
 
+#jcrom
+PRODUCT_PACKAGES += \
+	jctool \
+    bootsound \
+    stagefright
+
+PRODUCT_COPY_FILES += \
+	device/moto/wingray/camera/camera.stingray.so:system/lib/hw/camera.stingray.so \
+	device/moto/wingray/bootanimation.zip:system/media/bootanimation.zip
+
 # inherit from the non-open-source side, if present
 ifneq ($(filter trygon trygon_l10n calgon full_stingray tyranid stingray,$(TARGET_PRODUCT)),)
 $(call inherit-product-if-exists, vendor/moto/stingray/stingray-vendor.mk)
