@@ -39,4 +39,4 @@ $(call inherit-product, device/moto/wingray/device.mk)
 PRODUCT_NAME := full_wingray
 PRODUCT_DEVICE := wingray
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full Android on Wingray
+PRODUCT_MODEL := XOOM
